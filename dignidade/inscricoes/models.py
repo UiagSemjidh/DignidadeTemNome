@@ -57,7 +57,7 @@ class Inscricao(models.Model):
     etnia = models.CharField(max_length=20, choices=ETNIA_CHOICES)
     populacao_de_rua = models.BooleanField(default=False)
     rg_anexo = models.FileField(upload_to='documentos/')
-    cidade = models.CharField(max_length=20)
+    cidade = models.CharField(max_length=20, default='Natal')
     
     pontuacao = models.FloatField(default=0)
 
