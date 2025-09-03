@@ -3,6 +3,11 @@
 {% block content %}
 <div class="container mt-5">
     <h2 class="mb-4 text-center">Ranking de Inscrições</h2>
+
+    <div class="alert alert-info text-center">
+        Total de inscrições: <strong>{{ inscritos|length }}</strong>
+    </div>
+
     <table class="table table-bordered table-striped">
         <thead class="table-dark">
             <tr>
