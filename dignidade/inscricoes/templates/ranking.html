@@ -12,11 +12,14 @@
         <thead class="table-dark">
             <tr>
                 <th>Nome</th>
+                <th>Nome Social</th>
+                <th>Telefone</th>
+                <th>RG</th>
                 <th>Idade</th>
                 <th>Renda</th>
                 <th>Etnia</th>
                 <th>Cidade</th>
-                <th>território</th>
+                <th>Território</th>
                 <th>Gênero/Sexualidade</th>
                 <th>População de Rua</th>
                 <th>Pontuação</th>
@@ -26,6 +29,9 @@
             {% for inscrito in inscritos %}
             <tr>
                 <td>{{ inscrito.nome_civil }}</td>
+                <td>{{ inscrito.nome_social }}</td>
+                <td>{{ inscrito.telefone }}</td>
+                <td>{{ inscrito.rg_numero}}</td>
                 <td>{{ inscrito.calcular_idade }}</td>
                 <td>{{ inscrito.get_renda_familiar_display }}</td>
                 <td>{{ inscrito.get_etnia_display }}</td>
